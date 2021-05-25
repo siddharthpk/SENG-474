@@ -12,8 +12,36 @@ measures will lead to an increase or (preferably) a decrease of COVID-19 cases.
 To achieve this goal, we collected our test and train data from Oxford University[1] and
 Worldometers[2] who have been tracking COVID-19 since the beginning of it’s outbreak at
 the beginning of 2020. Using this data, we ran several tests on different machine learning
-models while tuning hyperparameters to determine which methods give the highest
-classification accuracy.
+models while tuning hyperparameters to determine which methods give the highest classification accuracy.
+
+# Experiments
+Outlined below are the experiments we conducted using the models to better gauge the results,
+determine new ways of looking and analysing our data, and check consistency in the accuracy
+levels.
+## Experiment 1 - Different time periods as the target feature
+After an initial review of the trends in the proportionality of active cases with government
+measures we found that most of the measures result in an effect after an incubation period of 7
+days, hence, we split the time periods to 1 week, 2 weeks, 3 weeks and 4 weeks after the
+measure was placed into action.
+## Experiment 2 - Adding an input feature for the number of new cases
+in the last week or two weeks
+To measure accurate results in the success of the measure placed, we narrowed down our
+cases dependency to active cases and new cases. In this experiment we’re adding “New
+Cases” split over 2 time periods - 1 week & 2 weeks as a new input feature. We observed a
+few countries with higher measures in place and observed their progress over 1 & 2 weeks by
+monitoring their case numbers. Result in the numbers pointed towards the question - Should a
+country reduce measures in place if it’s still experiencing an uprise in emerging cases?
+## Experiment 3 - Removing country code as a input feature
+Removing the country from the set of input features resulted in a generalized model that could
+be applied to any country. Additional input features such as the one outlined in Experiment 2
+were included in this experiment.
+## Experiment 4 - Changing the Variables of each machine
+Each machine has a set of variables that can be changed and adjusted to achieve better results.
+The Decision Tree can use different splitting equations, the Random Forest can have the
+number of trees fine tuned, and the Neural Network can have a multitude of parameters altered
+(we chose to focus on the number of layers). We also tested what percentage of test/train split
+would give us the best accuracy scores given that some methods like the Random Forest are
+less susceptible to overfitting issues
 
 # References
 - [1] COVID-19 Coronavirus Pandemic, Worldometer. [Online]. Available: https://www.worldometers.info/coronavirus/#countries
