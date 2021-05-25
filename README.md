@@ -16,17 +16,14 @@ models while tuning hyperparameters to determine which methods give the highest
 classification accuracy.
 
 # References
-[1] COVID-19 Coronavirus Pandemic, Worldometer. [Online]. Available:
-https://www.worldometers.info/coronavirus/#countries
-[2] Corona Government Response Tracker, University of Oxford. [Online]. Available:
-https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracke
-r#data
-[3] Coronavirus, World Health Organization. Accessed: Aug. 06, 2020. [Online]
-https://www.who.int/health-topics/coronavirus/coronavirus#tab=tab_1
-[4] COVID-19 Projections Using Machine Learning, COVID-19 Projections. Accessed: Aug
+- [1] COVID-19 Coronavirus Pandemic, Worldometer. [Online]. Available: https://www.worldometers.info/coronavirus/#countries
+- [2] Corona Government Response Tracker, University of Oxford. [Online]. Available: https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker#data
+- [3] Coronavirus, World Health Organization. Accessed: Aug. 06, 2020. [Online] https://www.who.int/health-topics/coronavirus/coronavirus#tab=tab_1
+- [4] COVID-19 Projections Using Machine Learning, COVID-19 Projections. Accessed: Aug
 05, 2020. [Online]. Available: https://covid19-projections.com/
-[5] MIT machine learning designed a COVID-19 vaccine that could cover a lot more people,
+- [5] MIT machine learning designed a COVID-19 vaccine that could cover a lot more people,
 ZDNet. Accessed: Aug. 06, 2020. [Online]. Available:
 https://www.zdnet.com/article/mits-machine-learning-designed-a-covid-19-vaccine-that-could
--cover-a-lot-more-people/
-3 For more info on SARS-Cov-1 see https://www.who.int/ith/diseases/sars/en/
+-cover-a-lot-more-people/3 
+
+For more info on SARS-Cov-1 see https://www.who.int/ith/diseases/sars/en/
