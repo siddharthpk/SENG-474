@@ -1,5 +1,12 @@
 # SENG 474 Project
 
+# Team Members
+- Siddharth Pathak
+- Gillian Bryson
+- Nathan Denny
+- Oliver Lewis
+- Chao Ge
+
 # Project Requirements
 Since COVID-19 has spread out wildly through the world, each country has implemented
 different government responses to defend against the virus. However the goal for each
@@ -23,8 +30,7 @@ After an initial review of the trends in the proportionality of active cases wit
 measures we found that most of the measures result in an effect after an incubation period of 7
 days, hence, we split the time periods to 1 week, 2 weeks, 3 weeks and 4 weeks after the
 measure was placed into action.
-## Experiment 2 - Adding an input feature for the number of new cases
-in the last week or two weeks
+## Experiment 2 - Adding an input feature for the number of new cases in the last week or two weeks
 To measure accurate results in the success of the measure placed, we narrowed down our
 cases dependency to active cases and new cases. In this experiment we’re adding “New
 Cases” split over 2 time periods - 1 week & 2 weeks as a new input feature. We observed a
@@ -41,7 +47,31 @@ The Decision Tree can use different splitting equations, the Random Forest can h
 number of trees fine tuned, and the Neural Network can have a multitude of parameters altered
 (we chose to focus on the number of layers). We also tested what percentage of test/train split
 would give us the best accuracy scores given that some methods like the Random Forest are
-less susceptible to overfitting issues
+less susceptible to overfitting issues.
+
+# Experimental Results
+
+## Best data split percentage:
+On all three machines on average the best accuracies were achieved at a .3 test/train split
+which is a value supported by most literature and was generally expected.
+## Best Tree Criterion:
+The best on average performing split criterion for weeks was gini with an accuracy range of
+[0.8375, 0.95]
+## Best Neural Hidden Layers Count:
+The best performing number of hidden Neural network layers was 20, having an accuracy
+range of [0.78, 0.85]
+
+The following graphs (Figure1, Figure2) show the accuracy scores of each method when
+applied to each time interval, and when using the parameters that gave us the best accuracy
+scores while testing:
+
+Our accuracy results all came within the range of [0.7,0.95] which is very close to our goal of
+75% accuracy. If we remove neural networks as one of our options we get an accuracy range
+of [0.77,0.95] which is nicely within the goals we set for ourselves in the midterm report.
+
+There are far too many figures that come from our testing to include in this document. To
+view them please see our repo at
+https://github.com/siddharthpk/SENG-474/tree/master/outputs
 
 # References
 - [1] COVID-19 Coronavirus Pandemic, Worldometer. [Online]. Available: https://www.worldometers.info/coronavirus/#countries
